@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    background: #E7E7E7;
+    width: 50%;
+    height: 80%;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-semicircle {
+    position: absolute;
+    width: 600px; 
+    height: 600px;
+    background: linear-gradient(to right, #45c1e2 50%, #3974f2 80%, #3d5ff5 100%);
+    border-radius: 50%;
+    bottom: -100px;
+    left: -200px;
+    filter: blur(25px);
+}
+
+.middle-circle {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(to right, #45c1e2 50%, #3974f2 100%);
+    border-radius: 50%;
+    position: absolute;
+    left: 400px;
+    top: 130px;
+    filter: blur(25px);
+}
+
+.right {
+    width: 150px;
+    height: 100%;
+    background: #61dbdd;
+    position: absolute;
+    right: -50px;
+    filter: blur(75px);
+}
+
+.login-container {
+    width: 90%;
+    height: 70%;
+    background: linear-gradient(to top right, rgba(25,255,255,0.3) 20%, rgba(255, 255, 255, 0.15) 30%);
+    position: absolute;
+    border: 1px solid rgb(255 255 255 / 50%);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.login-form {
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-deco-container {
+    width: 35%;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form-items {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+span.login-label {
+    color: white;
+    font-weight: 900;
+    font-size: 1.6em;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.text-input-container {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.form-label {
+    color: white;
+    font-weight: 300;
+    font-size: 0.8em;
+    margin-bottom: 5px;
+}
+
+input.text-style {
+    border-radius: 20px;
+    height: 20px;
+    background: none;
+    border: 2px solid rgba(255,255,255,0.5);
+    padding-left: 10px;
+    color: white;
+}
+
+button.login-btn {
+    width: 200px;
+    background: white;
+    border-radius: 20px;
+    border: none;
+    padding: 8px 0;
+    color: #8aaef0;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,0.25);
+    margin-top: 50px;
+}
+
+.login-deco {
+    position: relative;
+}
+
+i.small-cloud-icon  {
+    font-size: 2.5em;
+    position: absolute;
+    top: -50px;
+    left: -70px;
+    color: #ecfafa;
+}
+
+i.big-cloud-icon  {
+    font-size: 5em;
+    position: absolute;
+    top: -40px;
+    left: -45px;
+    color: #dff8f9;
+}
+
+i.lock-icon {
+    font-size: 5em;
+    color: #a6ecee;
+    position: absolute;
+}
+
+i.check-icon {
+    font-size: 1.5em;
+    color: white;
+    position: absolute;
+    top: 44px;
+    left: 22px;
+}
+
+.lock {
+    position: relative;
+    left: -35px;
+    top: -20px;
+}
+
+span.footer {
+   position: absolute;
+   bottom: 15px;
+   color: #a6ecee;
+   font-weight: 100;
+   font-size: 14px; 
+}
+
+input:focus {
+    outline: none;
+}
